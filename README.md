@@ -1,18 +1,24 @@
-# MelyssaArt
+# melyssa.art
 
-To start your Phoenix server:
+um mini-site em elixir/phoenix feito com amor para a ema melyssa 🖤
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+a proposta é simples: exibir um pôster animado em pixel art feito especialmente para o aniversário dela. o conteúdo aparece automaticamente nos dias 31/07 (aniversário) e 02/08/2025 (festa), nesses dias é exibido um pôster especial com "Happy Birhtday Ema Melyssa" escrito e no restante dos dias é exibido o pôster sem textos adicionais.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+o pôster foi feito no estilo pixel 8-bit com animações sutis e fundo temático, seguindo uma paleta emo/gótica 🦇 pela incrível [talbone](https://talb.one)
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## para rodar localmente
 
-## Learn more
+```bash
+mix deps.get
+mix phx.server
+````
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+acesse em `localhost:4000`
+
+## produção
+
+o deploy é feito na fly.io ou via docker e subir o app normalmente. o gif ocupa a tela inteira, com escala perfeita em telas pequenas 🥺
+
+## licença
+
+feito com carinho por zoey pessanha para uma das pessoas mais importantes do mundo 🖤
