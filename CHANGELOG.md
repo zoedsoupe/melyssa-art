@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/zoedsoupe/melyssa-art/compare/v0.4.0...v0.4.1) (2025-08-02)
+
+
+### Bug Fixes
+
+* now static assets are correctly applied/loaded ([8a33754](https://github.com/zoedsoupe/melyssa-art/commit/8a337546d03fb74cbf7b4c449f4ffcc2138ae00a))
+
 ## [0.4.0](https://github.com/zoedsoupe/melyssa-art/compare/v0.3.0...v0.4.0) (2025-08-02)
 
 
