@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/zoedsoupe/melyssa-art/compare/v0.2.0...v0.2.1) (2025-08-02)
+
+
+### Bug Fixes
+
+* remove tini from dockerfile ([1a0f1a7](https://github.com/zoedsoupe/melyssa-art/commit/1a0f1a7900921fd90b7bdbdd3a1cd15adec45798))
+
 ## [0.2.0](https://github.com/zoedsoupe/melyssa-art/compare/v0.1.0...v0.2.0) (2025-08-02)
 
 
