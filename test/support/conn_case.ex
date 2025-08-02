@@ -20,6 +20,7 @@ defmodule MelyssaArtWeb.ConnCase do
   using do
     quote do
       use MelyssaArtWeb, :verified_routes
+
       import MelyssaArtWeb.ConnCase
       import Phoenix.ConnTest
       import Plug.Conn

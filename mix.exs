@@ -9,7 +9,12 @@ defmodule MelyssaArt.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      dialyzer: [
+        plt_local_path: "priv/plts",
+        ignore_warnings: ".dialyzerignore.exs",
+        plt_add_apps: [:mix, :ex_unit]
+      ]
     ]
   end
 
@@ -38,7 +43,10 @@ defmodule MelyssaArt.MixProject do
       {:phoenix_live_view, "~> 1.0"},
       {:floki, ">= 0.30.0", only: :test},
       {:bandit, "~> 1.5"},
-      {:styler, "~> 1.5", only: [:dev, :test], runtime: false}
+      # dev
+      {:styler, "~> 1.5", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.3", only: [:dev, :test], runtime: false}
     ]
   end
 
