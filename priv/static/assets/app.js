@@ -1,11 +1,34 @@
-// For Phoenix.HTML support, including form and button helpers
-// copy the following scripts into your javascript bundle:
-// * deps/phoenix_html/priv/static/phoenix_html.js
+const playlistId = "PLEjDh3G3VFvFqBGNtdTKvQX7wJ5t7MJu3";
 
-// For Phoenix.Channels support, copy the following scripts
-// into your javascript bundle:
-// * deps/phoenix/priv/static/phoenix.js
+export function loadPlayer() {
+  const iframe = document.getElementById("emo-player");
+  iframe.src = `https://www.youtube.com/embed/videoseries?list=${playlistId}&enablejsapi=1&autoplay=1&mute=0&loop=1&playlist=${playlistId}`;
+  iframe.style.display = "block";
+}
 
-// For Phoenix.LiveView support, copy the following scripts
-// into your javascript bundle:
-// * deps/phoenix_live_view/priv/static/phoenix_live_view.js
+export function sendCommand(cmd) {
+  const iframe = document.getElementById("emo-player").contentWindow;
+  iframe.postMessage(JSON.stringify({
+    event: "command",
+    func: cmd,
+    args: []
+  }), "*");
+}
+
+export function playMusic() {
+  loadPlayer();
+  sendCommand("playVideo");
+}
+
+export function pauseMusic() {
+  sendCommand("pauseVideo");
+}
+
+export function nextTrack() {
+  sendCommand("nextVideo");
+}
+
+export function prevTrack() {
+  sendCommand("previousVideo");
+}
+

@@ -12,4 +12,15 @@
     alt="Ema Melyssa"
     class="poster-image"
   />
+  
+<!-- Music Controls Overlay -->
+  <div class="music-controls">
+    <button onclick="playMusic()" title="tocar" aria-label="play">▶</button>
+    <button onclick="pauseMusic()" title="pausar" aria-label="pause">⏸</button>
+    <button onclick="prevTrack()" title="anterior" aria-label="previous">⏮</button>
+    <button onclick="nextTrack()" title="próxima" aria-label="next">⏭</button>
+  </div>
+  
+<!-- Hidden YouTube Player -->
+  <iframe id="emo-player" style="display: none" width="0" height="0" allow="autoplay"></iframe>
 </main>

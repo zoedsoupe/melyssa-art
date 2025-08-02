@@ -35,6 +35,8 @@ RUN mix compile
 COPY config/runtime.exs config/
 
 COPY rel rel
+COPY priv priv
+
 RUN mix release
 
 FROM ${RUNNER_IMAGE}
