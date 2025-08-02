@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/zoedsoupe/melyssa-art/compare/v0.3.0...v0.4.0) (2025-08-02)
+
+
+### Features
+
+* playlist ([8267559](https://github.com/zoedsoupe/melyssa-art/commit/8267559c3752257a0f4faa43ab19fa8e8d7a1764))
+
 ## [0.3.0](https://github.com/zoedsoupe/melyssa-art/compare/v0.2.2...v0.3.0) (2025-08-02)
 
 
