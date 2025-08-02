@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/zoedsoupe/melyssa-art/compare/v0.2.2...v0.3.0) (2025-08-02)
+
+
+### Features
+
+* rendering the gif ([3fa3c09](https://github.com/zoedsoupe/melyssa-art/commit/3fa3c098869caf6f6c4d6835637584db0b645468))
+
+
+### Miscellaneous Chores
+
+* readme ([2416ebe](https://github.com/zoedsoupe/melyssa-art/commit/2416ebe4696888e39bec5d8e92c56dc750a7a6e4))
+
 ## [0.2.2](https://github.com/zoedsoupe/melyssa-art/compare/v0.2.1...v0.2.2) (2025-08-02)
 
 
