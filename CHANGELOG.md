@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/zoedsoupe/melyssa-art/compare/v0.4.1...v0.4.2) (2025-08-02)
+
+
+### Bug Fixes
+
+* controls UI ([21aa168](https://github.com/zoedsoupe/melyssa-art/commit/21aa168ae5e0baa496b1fca96839a6b08f706afe))
+
 ## [0.4.1](https://github.com/zoedsoupe/melyssa-art/compare/v0.4.0...v0.4.1) (2025-08-02)
 
 
