@@ -4,7 +4,7 @@ body {
   padding: 0;
   height: 100%;
   background: #1a0033;
-  /* matches the GIF background */
+  box-sizing: border-box;
 }
 
 .live-poster {
@@ -33,28 +33,125 @@ body {
 
 .music-controls {
   position: absolute;
-  bottom: 2rem;
+  top: 95%;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(26, 0, 51, 0.7);
-  /* semi-transparent bg */
-  padding: 0.5rem 1rem;
-  border: 1px solid #8b0051;
+  transform: translate(-50%, -50%);
+  padding: 0.4rem 0.6rem;
   border-radius: 1rem;
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.6rem;
   z-index: 10;
+  min-width: 200px;
+  max-width: 220px;
 }
 
-.music-controls button {
+.track-info {
+  text-align: center;
+  color: #ff6b9d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.control-buttons button {
   background: none;
   color: #ff6b9d;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.music-controls button:hover {
-  color: #cc4a7a;
+#play-pause-btn {
+  font-size: 2rem;
+}
+
+.volume-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+#volume-btn {
+  background: none;
+  color: #ff6b9d;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  min-width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#volume-slider {
+  width: 120px;
+  height: 4px;
+  background: rgba(139, 0, 81, 0.3);
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ff6b9d;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#volume-slider::-moz-range-track {
+  background: rgba(139, 0, 81, 0.3);
+  height: 4px;
+  border-radius: 2px;
+}
+
+@media (max-width: 480px) {
+  .music-controls {
+    top: 95%;
+    left: 50%;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    min-width: 100px;
+    max-width: 125px;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .control-buttons button {
+    font-size: 1.1rem;
+    min-width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  #play-pause-btn {
+    font-size: 1.2rem;
+  }
 }

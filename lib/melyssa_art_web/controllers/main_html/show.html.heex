@@ -15,10 +15,35 @@
   
 <!-- Music Controls Overlay -->
   <div class="music-controls">
-    <button onclick="prevTrack()" title="anterior" aria-label="previous">⏮</button>
-    <button onclick="playMusic()" title="tocar" aria-label="play">▶</button>
-    <button onclick="pauseMusic()" title="pausar" aria-label="pause">⏸</button>
-    <button onclick="nextTrack()" title="próxima" aria-label="next">⏭</button>
+    <!-- Track Info -->
+    <!-- <div class="track-info"> -->
+      <!-- <span id="track-info">emo playlist</span> -->
+    <!-- </div> -->
+    
+    <!-- Main Controls -->
+    <div class="control-buttons">
+      <button onclick="prevTrack()" title="anterior" aria-label="previous">{"<<"}</button>
+      <button id="play-pause-btn" onclick="togglePlayPause()" title="tocar" aria-label="play">
+        >
+      </button>
+      <button onclick="nextTrack()" title="próxima" aria-label="next">>></button>
+    </div>
+    
+<!-- Volume Controls -->
+    <!-- <div class="volume-controls"> -->
+      <!-- <button id="volume-btn" onclick="toggleMute()" title="silenciar" aria-label="mute">♪</button> -->
+      <!-- <input -->
+        <!-- type="range" -->
+        <!-- id="volume-slider" -->
+        <!-- min="0" -->
+        <!-- max="100" -->
+        <!-- value="50" -->
+        <!-- onchange="setVolume(this.value)" -->
+        <!-- oninput="setVolume(this.value)" -->
+        <!-- title="volume" -->
+        <!-- aria-label="volume control" -->
+      <!-- /> -->
+    <!-- </div> -->
   </div>
   
 <!-- Hidden YouTube Player -->
