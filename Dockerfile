@@ -40,7 +40,7 @@ RUN mix release
 FROM ${RUNNER_IMAGE}
 
 RUN apt-get update -y \
-    && apt-get install -y libstdc++6 openssl libncurses5 locales tini dnsutils ca-certificates tzdata \
+    && apt-get install -y libstdc++6 openssl libncurses5 locales dnsutils ca-certificates tzdata \
     && ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime \
     && dpkg-reconfigure -f noninteractive tzdata \
     && apt-get clean \
@@ -63,7 +63,5 @@ ENV MIX_ENV="prod"
 COPY --from=builder --chown=nobody:root /app/_build/$MIX_ENV/rel/melyssa_art ./
 
 USER nobody
-
-ENTRYPOINT ["/usr/bin/tini", "--"]
 
 CMD ["/app/bin/server"]
