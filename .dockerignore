@@ -1,0 +1,6 @@
+/_build/
+/deps/
+/.claude/
+/test/
+/rinha-de-backend-2025/
+*.md
