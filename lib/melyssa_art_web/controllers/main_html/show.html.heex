@@ -1,0 +1,15 @@
+<main class="live-poster">
+  <img
+    :if={@birthday?}
+    src={~p"/images/melyssa.gif"}
+    alt="Happy Birthday Ema Melyssa"
+    class="poster-image"
+  />
+
+  <img
+    :if={!@birthday?}
+    src={~p"/images/melyssa_notext.gif"}
+    alt="Ema Melyssa"
+    class="poster-image"
+  />
+</main>
