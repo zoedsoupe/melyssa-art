@@ -4,7 +4,10 @@ defmodule MelyssaArtWeb.MainController do
   def show(conn, _) do
     today = Date.utc_today()
     birthday_day? = today.day == 31 and today.month == 7
-    birthday? = birthday_day? or Date.compare(today, ~D[2025-08-02])
-    render(conn, "show.html", birthday?: birthday?)
+    birthday? = birthday_day? or Date.compare(today, ~D[2025-08-02]) == :eq
+
+    conn
+    |> put_layout(html: {MelyssaArtWeb.Layouts, :root})
+    |> render("show.html", birthday?: birthday?)
   end
 end

@@ -10,7 +10,7 @@ FROM ${BUILDER_IMAGE} AS builder
 ENV TZ=America/Sao_Paulo
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update -y && apt-get install -y build-essential git ca-certificates && \
+RUN apt-get update -y && apt-get install -y build-essential git git-lfs ca-certificates && \
     apt-get clean && rm -f /var/lib/apt/lists/*_*
 
 RUN mix local.hex --force && \

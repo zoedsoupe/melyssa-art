@@ -192,6 +192,8 @@ jobs:
       concurrency: deploy-group
       steps:
         - uses: actions/checkout@v4
+          with:
+            lfs: true
         - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: flyctl deploy --remote-only
           env:
