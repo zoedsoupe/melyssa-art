@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.3](https://github.com/zoedsoupe/melyssa-art/compare/v0.4.2...v0.4.3) (2025-08-04)
+
+
+### Miscellaneous Chores
+
+* update README.md ([e1c8ab5](https://github.com/zoedsoupe/melyssa-art/commit/e1c8ab5e958b952d0361610d1eae09a4781dc957))
+* update README.md ([bdc0098](https://github.com/zoedsoupe/melyssa-art/commit/bdc009870da6d582b04df38e1cbe9860d3204ad3))
+
 ## [0.4.2](https://github.com/zoedsoupe/melyssa-art/compare/v0.4.1...v0.4.2) (2025-08-02)
 
 
