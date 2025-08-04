@@ -6,6 +6,8 @@ a proposta é simples: exibir um pôster animado em pixel art feito especialment
 
 o pôster foi feito no estilo pixel 8-bit com animações sutis e fundo temático, seguindo uma paleta emo/gótica 🦇 pela incrível [talbone](https://talb.one)
 
+<img align="center" src="./priv/static/images/melyssa_notext.gif" />
+
 ## para rodar localmente
 
 ```bash
